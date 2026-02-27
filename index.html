@@ -1,0 +1,2065 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RPO English Mastery Roadmap - 採用アウトソーシング英語学習ロードマップ</title>
+<style>
+  :root {
+    --primary: #1a1a2e;
+    --secondary: #16213e;
+    --accent: #0f3460;
+    --highlight: #e94560;
+    --gold: #f0c040;
+    --green: #00b894;
+    --blue: #0984e3;
+    --purple: #6c5ce7;
+    --orange: #e17055;
+    --light: #f8f9fa;
+    --text: #2d3436;
+    --text-light: #636e72;
+    --card-bg: #ffffff;
+    --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    --gradient-4: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+    background: var(--light);
+    color: var(--text);
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, #0c0c1d 0%, #1a1a3e 30%, #2d1b69 60%, #1a1a2e 100%);
+    color: white;
+    padding: 80px 20px 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(233,69,96,0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(15,52,96,0.3) 0%, transparent 50%),
+                radial-gradient(circle at 50% 100%, rgba(108,92,231,0.2) 0%, transparent 50%);
+  }
+
+  .hero > * { position: relative; z-index: 1; }
+
+  .hero-badge {
+    display: inline-block;
+    background: rgba(233,69,96,0.2);
+    border: 1px solid rgba(233,69,96,0.4);
+    color: #ff6b81;
+    padding: 6px 20px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 800;
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+  }
+
+  .hero h1 span { color: var(--highlight); }
+
+  .hero p {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.7);
+    max-width: 700px;
+    margin: 0 auto 30px;
+  }
+
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .hero-stat {
+    text-align: center;
+  }
+
+  .hero-stat-number {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--gold);
+  }
+
+  .hero-stat-label {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* Section */
+  .section {
+    padding: 60px 0;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .section-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--highlight), var(--purple));
+    color: white;
+    padding: 4px 16px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .section-title {
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 12px;
+  }
+
+  .section-desc {
+    color: var(--text-light);
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+
+  /* Overview Cards */
+  .overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+  }
+
+  .overview-card {
+    background: white;
+    border-radius: 16px;
+    padding: 32px 24px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    border: 1px solid rgba(0,0,0,0.04);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .overview-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+  }
+
+  .overview-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+  }
+
+  .overview-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--primary);
+  }
+
+  .overview-card p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.6;
+  }
+
+  /* Priority Section */
+  .priority-bg {
+    background: linear-gradient(180deg, #f8f9fa 0%, #eef1f5 100%);
+  }
+
+  .priority-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .priority-item {
+    display: flex;
+    align-items: stretch;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    border: 1px solid rgba(0,0,0,0.04);
+  }
+
+  .priority-rank {
+    width: 80px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 800;
+    font-size: 1.4rem;
+    flex-shrink: 0;
+  }
+
+  .priority-rank small {
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
+  }
+
+  .priority-content {
+    padding: 24px;
+    flex: 1;
+  }
+
+  .priority-content h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: var(--primary);
+  }
+
+  .priority-content .en {
+    font-size: 0.85rem;
+    color: var(--blue);
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .priority-content p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.6;
+  }
+
+  .priority-bar {
+    height: 4px;
+    border-radius: 2px;
+    margin-top: 12px;
+  }
+
+  /* Phase Timeline */
+  .timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, var(--highlight), var(--purple), var(--blue), var(--green));
+    border-radius: 2px;
+  }
+
+  .phase {
+    position: relative;
+    margin-bottom: 48px;
+    padding-left: 100px;
+  }
+
+  .phase-dot {
+    position: absolute;
+    left: 26px;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 800;
+    font-size: 0.85rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  .phase-card {
+    background: white;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    border: 1px solid rgba(0,0,0,0.04);
+    position: relative;
+  }
+
+  .phase-card::before {
+    content: '';
+    position: absolute;
+    left: -16px;
+    top: 12px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 16px solid white;
+  }
+
+  .phase-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+
+  .phase-badge {
+    padding: 4px 14px;
+    border-radius: 50px;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .phase-duration {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    font-weight: 600;
+  }
+
+  .phase-title {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 4px;
+  }
+
+  .phase-subtitle {
+    font-size: 0.95rem;
+    color: var(--blue);
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  .phase-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  @media (max-width: 600px) {
+    .phase-grid { grid-template-columns: 1fr; }
+    .phase { padding-left: 80px; }
+    .timeline::before { left: 30px; }
+    .phase-dot { left: 16px; }
+  }
+
+  .phase-block {
+    background: var(--light);
+    border-radius: 12px;
+    padding: 20px;
+  }
+
+  .phase-block h4 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .phase-block ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .phase-block li {
+    font-size: 0.9rem;
+    padding: 4px 0;
+    padding-left: 20px;
+    position: relative;
+    color: var(--text);
+  }
+
+  .phase-block li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--highlight);
+    font-weight: 700;
+  }
+
+  .phase-goal {
+    background: linear-gradient(135deg, rgba(233,69,96,0.08), rgba(108,92,231,0.08));
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-top: 16px;
+    font-size: 0.9rem;
+    border-left: 3px solid var(--highlight);
+  }
+
+  .phase-goal strong {
+    color: var(--highlight);
+  }
+
+  /* Vocabulary Section */
+  .vocab-bg {
+    background: linear-gradient(180deg, #eef1f5 0%, #f8f9fa 100%);
+  }
+
+  .vocab-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 24px;
+  }
+
+  .vocab-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    border: 1px solid rgba(0,0,0,0.04);
+  }
+
+  .vocab-card-header {
+    padding: 20px 24px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .vocab-card-header h3 {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .vocab-card-header span {
+    font-size: 1.4rem;
+  }
+
+  .vocab-list {
+    padding: 16px 24px 24px;
+  }
+
+  .vocab-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+    gap: 12px;
+  }
+
+  .vocab-item:last-child { border-bottom: none; }
+
+  .vocab-en {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--primary);
+    flex-shrink: 0;
+  }
+
+  .vocab-ja {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    text-align: right;
+  }
+
+  /* Phrases Section */
+  .phrase-scenarios {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .scenario {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    border: 1px solid rgba(0,0,0,0.04);
+  }
+
+  .scenario-header {
+    padding: 20px 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .scenario-header h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary);
+    flex: 1;
+  }
+
+  .scenario-header .toggle {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    transition: transform 0.3s;
+  }
+
+  .scenario-body {
+    padding: 0 28px 24px;
+  }
+
+  .phrase-pair {
+    background: var(--light);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+  }
+
+  .phrase-pair:last-child { margin-bottom: 0; }
+
+  .phrase-context {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--purple);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
+
+  .phrase-en {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 4px;
+    font-style: italic;
+  }
+
+  .phrase-ja {
+    font-size: 0.85rem;
+    color: var(--text-light);
+  }
+
+  /* KPI Section */
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .kpi-card {
+    background: white;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    border: 1px solid rgba(0,0,0,0.04);
+  }
+
+  .kpi-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .kpi-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+  }
+
+  .kpi-row:last-child { border-bottom: none; }
+
+  .kpi-label {
+    font-size: 0.85rem;
+    color: var(--text);
+  }
+
+  .kpi-values {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+  }
+
+  .kpi-before {
+    color: var(--text-light);
+    text-decoration: line-through;
+  }
+
+  .kpi-arrow {
+    color: var(--green);
+    font-weight: 700;
+  }
+
+  .kpi-after {
+    color: var(--green);
+    font-weight: 700;
+  }
+
+  /* Trends Section */
+  .trends-bg {
+    background: linear-gradient(135deg, #0c0c1d 0%, #1a1a3e 50%, #2d1b69 100%);
+    color: white;
+  }
+
+  .trends-bg .section-title { color: white; }
+  .trends-bg .section-desc { color: rgba(255,255,255,0.6); }
+
+  .trends-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+  }
+
+  .trend-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 28px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s, background 0.3s;
+  }
+
+  .trend-card:hover {
+    transform: translateY(-4px);
+    background: rgba(255,255,255,0.1);
+  }
+
+  .trend-icon {
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+
+  .trend-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .trend-card p {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.6;
+  }
+
+  .trend-keyword {
+    display: inline-block;
+    background: rgba(233,69,96,0.2);
+    border: 1px solid rgba(233,69,96,0.3);
+    color: #ff6b81;
+    padding: 2px 10px;
+    border-radius: 50px;
+    font-size: 0.72rem;
+    margin-top: 10px;
+    margin-right: 4px;
+  }
+
+  /* Weekly Routine */
+  .routine-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .routine-table th {
+    background: var(--primary);
+    color: white;
+    padding: 14px 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: 0.5px;
+  }
+
+  .routine-table td {
+    padding: 14px 20px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+    vertical-align: top;
+  }
+
+  .routine-table tr:last-child td { border-bottom: none; }
+
+  .routine-table tr:nth-child(even) { background: rgba(0,0,0,0.015); }
+
+  .routine-day {
+    font-weight: 700;
+    color: var(--primary);
+    white-space: nowrap;
+  }
+
+  .routine-time {
+    color: var(--blue);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  /* Resources */
+  .resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+
+  .resource-card {
+    background: white;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    border: 1px solid rgba(0,0,0,0.04);
+  }
+
+  .resource-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .resource-item {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+  }
+
+  .resource-item:last-child { border-bottom: none; }
+
+  .resource-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary);
+  }
+
+  .resource-desc {
+    font-size: 0.8rem;
+    color: var(--text-light);
+  }
+
+  /* Discussion Summary */
+  .discussion-bg {
+    background: linear-gradient(180deg, #f8f9fa 0%, #eef1f5 100%);
+  }
+
+  .ai-opinions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .ai-card {
+    background: white;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    border-top: 4px solid;
+  }
+
+  .ai-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .ai-card p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.7;
+  }
+
+  .ai-card .key-point {
+    background: var(--light);
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-top: 12px;
+    font-size: 0.85rem;
+    border-left: 3px solid;
+  }
+
+  /* TOEIC Target */
+  .toeic-section {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .toeic-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+
+  @media (max-width: 768px) {
+    .toeic-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  .toeic-card {
+    background: white;
+    border-radius: 14px;
+    padding: 24px 20px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    border: 1px solid rgba(0,0,0,0.04);
+  }
+
+  .toeic-phase {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+
+  .toeic-score {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .toeic-label {
+    font-size: 0.75rem;
+    color: var(--text-light);
+  }
+
+  .toeic-cefr {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: white;
+    margin-top: 8px;
+  }
+
+  /* Footer */
+  footer {
+    background: var(--primary);
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.85rem;
+  }
+
+  footer a {
+    color: var(--highlight);
+    text-decoration: none;
+  }
+
+  .footer-note {
+    margin-top: 12px;
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.3);
+  }
+
+  /* Smooth scroll */
+  html { scroll-behavior: smooth; }
+
+  /* Navigation */
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(26,26,46,0.95);
+    backdrop-filter: blur(10px);
+    padding: 0 20px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+  }
+
+  .nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+  }
+
+  .nav-logo {
+    color: white;
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: -0.5px;
+  }
+
+  .nav-logo span { color: var(--highlight); }
+
+  .nav-links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: color 0.2s;
+    letter-spacing: 0.5px;
+  }
+
+  .nav-links a:hover { color: white; }
+
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hero { padding: 100px 20px 50px; }
+    .priority-item { flex-direction: column; }
+    .priority-rank { width: 100%; min-height: auto; padding: 12px; flex-direction: row; gap: 8px; }
+  }
+
+  /* Checklist */
+  .checklist {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  }
+
+  .checklist-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+  }
+
+  .checklist-item:last-child { border-bottom: none; }
+
+  .check-box {
+    width: 22px;
+    height: 22px;
+    border: 2px solid var(--blue);
+    border-radius: 6px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+  }
+
+  .check-box.checked {
+    background: var(--green);
+    border-color: var(--green);
+    color: white;
+  }
+
+  .checklist-text {
+    font-size: 0.9rem;
+    color: var(--text);
+  }
+
+  .checklist-text.done {
+    text-decoration: line-through;
+    color: var(--text-light);
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">RPO <span>English</span> Mastery</div>
+    <ul class="nav-links">
+      <li><a href="#overview">概要</a></li>
+      <li><a href="#priority">優先順位</a></li>
+      <li><a href="#roadmap">ロードマップ</a></li>
+      <li><a href="#vocabulary">用語集</a></li>
+      <li><a href="#phrases">フレーズ</a></li>
+      <li><a href="#kpi">KPI</a></li>
+      <li><a href="#trends">トレンド</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero" style="padding-top:120px;">
+  <div class="hero-badge">Recruitment Process Outsourcing</div>
+  <h1>RPO <span>English</span> Mastery<br>Roadmap</h1>
+  <p>採用アウトソーシング業務に特化した英語学習ロードマップ。<br>12ヶ月で業務に必要な英語力を体系的に習得する。</p>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="hero-stat-number">12</div>
+      <div class="hero-stat-label">Months</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-number">4</div>
+      <div class="hero-stat-label">Phases</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-number">60+</div>
+      <div class="hero-stat-label">Key Terms</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-number">TOEIC 860+</div>
+      <div class="hero-stat-label">Target Score</div>
+    </div>
+  </div>
+</section>
+
+<!-- Overview -->
+<section id="overview" class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Overview</div>
+      <h2 class="section-title">なぜRPO特化の英語学習が必要か</h2>
+      <p class="section-desc">汎用的なビジネス英語ではなく、採用アウトソーシング業務に直結するスキルを最短距離で習得する</p>
+    </div>
+    <div class="overview-grid">
+      <div class="overview-card">
+        <div class="overview-icon" style="background:linear-gradient(135deg,#e94560,#c23152);">&#x1F3AF;</div>
+        <h3>業務直結型アプローチ</h3>
+        <p>RPO業務で実際に使うフレーズ・シナリオから学習を開始。学んだその日から業務に活かせる実践的な内容に特化。</p>
+      </div>
+      <div class="overview-card">
+        <div class="overview-icon" style="background:linear-gradient(135deg,#6c5ce7,#a55eea);">&#x1F4AC;</div>
+        <h3>アウトプット重視設計</h3>
+        <p>毎週の実務アウトプット（メール作成・MTG要約・ロールプレイ）を固定し、「使える英語」を習慣化。</p>
+      </div>
+      <div class="overview-card">
+        <div class="overview-icon" style="background:linear-gradient(135deg,#0984e3,#74b9ff);">&#x1F4CA;</div>
+        <h3>KPIで成果を可視化</h3>
+        <p>メール作成時間・MTG発言回数・即答率など、業務効率の改善を定量的に測定し、成長を実感。</p>
+      </div>
+      <div class="overview-card">
+        <div class="overview-icon" style="background:linear-gradient(135deg,#00b894,#55efc4);">&#x1F680;</div>
+        <h3>グローバルトレンド対応</h3>
+        <p>AI採用・DEI・スキルベース採用など、2025-2026年のRPO業界最新トレンドに対応した英語力を構築。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Priority -->
+<section id="priority" class="section priority-bg">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Priority</div>
+      <h2 class="section-title">スキル優先順位</h2>
+      <p class="section-desc">RPO業務の実務接点の濃さに基づいた優先順位。スキル単位ではなく業務シーン単位で設計。</p>
+    </div>
+    <div class="priority-list">
+      <div class="priority-item">
+        <div class="priority-rank" style="background:linear-gradient(135deg,#e94560,#c23152);">
+          #1
+          <small>最優先</small>
+        </div>
+        <div class="priority-content">
+          <h3>短文アウトプット（ライティング＋チャット）</h3>
+          <div class="en">Written Communication - Email, Chat, Reports</div>
+          <p>クライアント・候補者へのステータス更新、進捗報告、日程調整、質問応答。RPO業務の日常を支え、ミスコミュニケーションが業務遅延に直結。思考時間があるため習得ハードルは比較的低い。</p>
+          <div class="priority-bar" style="background:linear-gradient(90deg,#e94560 100%,transparent 100%);"></div>
+        </div>
+      </div>
+      <div class="priority-item">
+        <div class="priority-rank" style="background:linear-gradient(135deg,#6c5ce7,#a55eea);">
+          #2
+          <small>重要</small>
+        </div>
+        <div class="priority-content">
+          <h3>リアルタイム対話・要約（スピーキング）</h3>
+          <div class="en">Verbal Communication - Meetings, Interviews, Presentations</div>
+          <p>クライアントMTG、候補者面談での状況報告、質疑応答、意見表明、次アクションの合意形成。信頼関係構築とタイムリーな意思決定に不可欠。書くのと同じ素材を口頭でも練習する並行学習が効果的。</p>
+          <div class="priority-bar" style="background:linear-gradient(90deg,#6c5ce7 85%,transparent 85%);"></div>
+        </div>
+      </div>
+      <div class="priority-item">
+        <div class="priority-rank" style="background:linear-gradient(135deg,#0984e3,#74b9ff);">
+          #3
+          <small>基盤</small>
+        </div>
+        <div class="priority-content">
+          <h3>情報インプット（リスニング）</h3>
+          <div class="en">Listening Comprehension - Understanding Needs & Nuances</div>
+          <p>MTGでの相手の発言、候補者の本音、クライアントの真のニーズの理解。正しいインプットなしに適切なアウトプットは不可能。特にRPOでは細かなニュアンスの聞き取りが重要。</p>
+          <div class="priority-bar" style="background:linear-gradient(90deg,#0984e3 70%,transparent 70%);"></div>
+        </div>
+      </div>
+      <div class="priority-item">
+        <div class="priority-rank" style="background:linear-gradient(135deg,#00b894,#55efc4);">
+          #4
+          <small>支援</small>
+        </div>
+        <div class="priority-content">
+          <h3>詳細情報把握（リーディング）</h3>
+          <div class="en">Reading Comprehension - JDs, Contracts, Reports</div>
+          <p>求人票、レジュメ、契約書、クライアントからの指示書の詳細理解。大量の情報から必要な点を素早く見抜く効率性が求められる。業務が回り始めてから深度を上げるのが効率的。</p>
+          <div class="priority-bar" style="background:linear-gradient(90deg,#00b894 55%,transparent 55%);"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOEIC Targets -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Target</div>
+      <h2 class="section-title">目標スコア・レベル</h2>
+      <p class="section-desc">各フェーズ完了時の目安TOEIC/CEFRレベル</p>
+    </div>
+    <div class="toeic-section">
+      <div class="toeic-grid">
+        <div class="toeic-card">
+          <div class="toeic-phase" style="color:var(--highlight);">Phase 1 完了</div>
+          <div class="toeic-score">600+</div>
+          <div class="toeic-label">TOEIC目安</div>
+          <div class="toeic-cefr" style="background:var(--highlight);">CEFR B1</div>
+        </div>
+        <div class="toeic-card">
+          <div class="toeic-phase" style="color:var(--purple);">Phase 2 完了</div>
+          <div class="toeic-score">730+</div>
+          <div class="toeic-label">TOEIC目安</div>
+          <div class="toeic-cefr" style="background:var(--purple);">CEFR B1+</div>
+        </div>
+        <div class="toeic-card">
+          <div class="toeic-phase" style="color:var(--blue);">Phase 3 完了</div>
+          <div class="toeic-score">800+</div>
+          <div class="toeic-label">TOEIC目安</div>
+          <div class="toeic-cefr" style="background:var(--blue);">CEFR B2</div>
+        </div>
+        <div class="toeic-card">
+          <div class="toeic-phase" style="color:var(--green);">Phase 4 完了</div>
+          <div class="toeic-score">860+</div>
+          <div class="toeic-label">TOEIC目安</div>
+          <div class="toeic-cefr" style="background:var(--green);">CEFR B2+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Roadmap Timeline -->
+<section id="roadmap" class="section" style="background:linear-gradient(180deg,#f8f9fa,#eef1f5);">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Roadmap</div>
+      <h2 class="section-title">12ヶ月学習ロードマップ</h2>
+      <p class="section-desc">業務シナリオに即した実践的アウトプットを軸に、段階的にスキルを積み上げる</p>
+    </div>
+    <div class="timeline">
+      <!-- Phase 1 -->
+      <div class="phase">
+        <div class="phase-dot" style="background:var(--highlight);">1</div>
+        <div class="phase-card">
+          <div class="phase-header">
+            <span class="phase-badge" style="background:var(--highlight);">Phase 1</span>
+            <span class="phase-duration">Month 1-2</span>
+          </div>
+          <div class="phase-title">RPO基礎語彙 + 定型短文コミュニケーション</div>
+          <div class="phase-subtitle">Foundation: Vocabulary & Template Mastery</div>
+          <div class="phase-grid">
+            <div class="phase-block">
+              <h4>&#x1F4DA; 学習内容</h4>
+              <ul>
+                <li>RPO専門用語60語以上の習得</li>
+                <li>ビジネスメール基本フレーズ</li>
+                <li>日程調整・進捗確認の定型文</li>
+                <li>候補者ステータス更新テンプレート</li>
+                <li>「文脈タグ付き語彙帳」の作成開始</li>
+              </ul>
+            </div>
+            <div class="phase-block">
+              <h4>&#x1F4DD; 週次アウトプット</h4>
+              <ul>
+                <li>候補者への進捗連絡メール作成（英語）</li>
+                <li>クライアント向け週次進捗レポート</li>
+                <li>MTGアジェンダ案の英文化</li>
+                <li>RPO語彙フラッシュカード10語/週</li>
+              </ul>
+            </div>
+          </div>
+          <div class="phase-goal">
+            <strong>Goal:</strong> 迷いなく短文の定型業務メールを作成・送付し、簡単な状況を口頭で伝えられる
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 2 -->
+      <div class="phase">
+        <div class="phase-dot" style="background:var(--purple);">2</div>
+        <div class="phase-card">
+          <div class="phase-header">
+            <span class="phase-badge" style="background:var(--purple);">Phase 2</span>
+            <span class="phase-duration">Month 3-4</span>
+          </div>
+          <div class="phase-title">業務シナリオ対応 + 要約・質疑応答</div>
+          <div class="phase-subtitle">Scenario: Role-Play & Summarization</div>
+          <div class="phase-grid">
+            <div class="phase-block">
+              <h4>&#x1F4DA; 学習内容</h4>
+              <ul>
+                <li>面談設定・リジェクト通知のロールプレイ</li>
+                <li>要件確認・候補者質問対応の練習</li>
+                <li>MTGでの状況要約・意見表明</li>
+                <li>電話・ビデオ面談の英語対応</li>
+                <li>同じ素材で「書く→話す」並行練習</li>
+              </ul>
+            </div>
+            <div class="phase-block">
+              <h4>&#x1F4DD; 週次アウトプット</h4>
+              <ul>
+                <li>模擬面談での企業紹介スクリプト（3分）</li>
+                <li>MTG状況要約練習（30秒、録音）</li>
+                <li>MTG後のアクションアイテムリスト</li>
+                <li>面談調整メールの英文作成</li>
+              </ul>
+            </div>
+          </div>
+          <div class="phase-goal">
+            <strong>Goal:</strong> 業務シナリオに沿った対話が可能になり、MTGの要点を簡潔にまとめられる
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 3 -->
+      <div class="phase">
+        <div class="phase-dot" style="background:var(--blue);">3</div>
+        <div class="phase-card">
+          <div class="phase-header">
+            <span class="phase-badge" style="background:var(--blue);">Phase 3</span>
+            <span class="phase-duration">Month 5-6</span>
+          </div>
+          <div class="phase-title">提案・戦略の英文化 + 複雑な情報伝達</div>
+          <div class="phase-subtitle">Strategy: Proposals & Data-Driven Communication</div>
+          <div class="phase-grid">
+            <div class="phase-block">
+              <h4>&#x1F4DA; 学習内容</h4>
+              <ul>
+                <li>採用課題の解決策提案（英語）</li>
+                <li>データに基づく進捗説明</li>
+                <li>高度な採用要件のすり合わせ</li>
+                <li>ネガティブフィードバックの伝え方</li>
+                <li>KPI報告プレゼンテーション</li>
+              </ul>
+            </div>
+            <div class="phase-block">
+              <h4>&#x1F4DD; 週次アウトプット</h4>
+              <ul>
+                <li>改善提案書（PPT1枚の英文）</li>
+                <li>候補者フィードバックスクリプト</li>
+                <li>採用戦略ショートプレゼン（5分、録画）</li>
+                <li>パイプラインレビュー報告書</li>
+              </ul>
+            </div>
+          </div>
+          <div class="phase-goal">
+            <strong>Goal:</strong> 複雑な情報や自身の提案を論理的に構成し、英語で伝えられる
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 4 -->
+      <div class="phase">
+        <div class="phase-dot" style="background:var(--green);">4</div>
+        <div class="phase-card">
+          <div class="phase-header">
+            <span class="phase-badge" style="background:var(--green);">Phase 4</span>
+            <span class="phase-duration">Month 7-12</span>
+          </div>
+          <div class="phase-title">高度な交渉 + 戦略的ディスカッション</div>
+          <div class="phase-subtitle">Mastery: Negotiation & Strategic Leadership</div>
+          <div class="phase-grid">
+            <div class="phase-block">
+              <h4>&#x1F4DA; 学習内容</h4>
+              <ul>
+                <li>内定条件・給与交渉の英語対応</li>
+                <li>契約条件見直しのディスカッション</li>
+                <li>採用戦略の深い議論リード</li>
+                <li>多様な文化背景への対応力</li>
+                <li>業界カンファレンスでのネットワーキング</li>
+              </ul>
+            </div>
+            <div class="phase-block">
+              <h4>&#x1F4DD; 週次アウトプット</h4>
+              <ul>
+                <li>模擬給与交渉ロールプレイ（録音）</li>
+                <li>契約条件に関する懸念点説明文</li>
+                <li>戦略MTGリード練習（英文）</li>
+                <li>RPO業界記事の100語英文要約</li>
+              </ul>
+            </div>
+          </div>
+          <div class="phase-goal">
+            <strong>Goal:</strong> 高度なビジネス交渉や戦略的対話を英語で円滑に行える
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Vocabulary -->
+<section id="vocabulary" class="section vocab-bg">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Vocabulary</div>
+      <h2 class="section-title">RPO必須英語用語集</h2>
+      <p class="section-desc">採用プロセス・候補者管理・クライアント対応・KPI・テクノロジー別に整理</p>
+    </div>
+    <div class="vocab-categories">
+      <!-- Recruitment Process -->
+      <div class="vocab-card">
+        <div class="vocab-card-header" style="background:linear-gradient(135deg,#e94560,#c23152);">
+          <span>&#x1F50D;</span>
+          <h3>Recruitment Process</h3>
+        </div>
+        <div class="vocab-list">
+          <div class="vocab-item"><span class="vocab-en">Talent Acquisition</span><span class="vocab-ja">人材獲得</span></div>
+          <div class="vocab-item"><span class="vocab-en">Sourcing</span><span class="vocab-ja">候補者発掘</span></div>
+          <div class="vocab-item"><span class="vocab-en">Screening</span><span class="vocab-ja">選考・スクリーニング</span></div>
+          <div class="vocab-item"><span class="vocab-en">Shortlisting</span><span class="vocab-ja">候補者絞り込み</span></div>
+          <div class="vocab-item"><span class="vocab-en">Job Description (JD)</span><span class="vocab-ja">求人票・職務記述書</span></div>
+          <div class="vocab-item"><span class="vocab-en">Requisition</span><span class="vocab-ja">求人依頼</span></div>
+          <div class="vocab-item"><span class="vocab-en">Intake Meeting</span><span class="vocab-ja">要件ヒアリングMTG</span></div>
+          <div class="vocab-item"><span class="vocab-en">Offer Letter</span><span class="vocab-ja">内定通知書</span></div>
+          <div class="vocab-item"><span class="vocab-en">Onboarding</span><span class="vocab-ja">入社手続き・受入れ</span></div>
+          <div class="vocab-item"><span class="vocab-en">Background Check</span><span class="vocab-ja">身元確認・経歴調査</span></div>
+        </div>
+      </div>
+
+      <!-- Candidate Management -->
+      <div class="vocab-card">
+        <div class="vocab-card-header" style="background:linear-gradient(135deg,#6c5ce7,#a55eea);">
+          <span>&#x1F465;</span>
+          <h3>Candidate Management</h3>
+        </div>
+        <div class="vocab-list">
+          <div class="vocab-item"><span class="vocab-en">Candidate Pipeline</span><span class="vocab-ja">候補者パイプライン</span></div>
+          <div class="vocab-item"><span class="vocab-en">Talent Pool</span><span class="vocab-ja">人材プール</span></div>
+          <div class="vocab-item"><span class="vocab-en">Passive Candidate</span><span class="vocab-ja">転職潜在層</span></div>
+          <div class="vocab-item"><span class="vocab-en">Active Candidate</span><span class="vocab-ja">転職顕在層</span></div>
+          <div class="vocab-item"><span class="vocab-en">Candidate Experience</span><span class="vocab-ja">候補者体験</span></div>
+          <div class="vocab-item"><span class="vocab-en">Employer Branding</span><span class="vocab-ja">採用ブランディング</span></div>
+          <div class="vocab-item"><span class="vocab-en">Employee Value Proposition</span><span class="vocab-ja">従業員価値提案(EVP)</span></div>
+          <div class="vocab-item"><span class="vocab-en">Talent Assessment</span><span class="vocab-ja">人材評価</span></div>
+          <div class="vocab-item"><span class="vocab-en">Culture Fit</span><span class="vocab-ja">カルチャーフィット</span></div>
+          <div class="vocab-item"><span class="vocab-en">Counter Offer</span><span class="vocab-ja">カウンターオファー</span></div>
+        </div>
+      </div>
+
+      <!-- Client Communication -->
+      <div class="vocab-card">
+        <div class="vocab-card-header" style="background:linear-gradient(135deg,#0984e3,#74b9ff);">
+          <span>&#x1F91D;</span>
+          <h3>Client Communication</h3>
+        </div>
+        <div class="vocab-list">
+          <div class="vocab-item"><span class="vocab-en">Hiring Manager</span><span class="vocab-ja">採用責任者</span></div>
+          <div class="vocab-item"><span class="vocab-en">Stakeholder</span><span class="vocab-ja">利害関係者</span></div>
+          <div class="vocab-item"><span class="vocab-en">Service Level Agreement</span><span class="vocab-ja">SLA（サービス水準合意）</span></div>
+          <div class="vocab-item"><span class="vocab-en">Statement of Work</span><span class="vocab-ja">SOW（業務範囲定義書）</span></div>
+          <div class="vocab-item"><span class="vocab-en">Alignment Meeting</span><span class="vocab-ja">認識合わせMTG</span></div>
+          <div class="vocab-item"><span class="vocab-en">Business Review</span><span class="vocab-ja">ビジネスレビュー</span></div>
+          <div class="vocab-item"><span class="vocab-en">Scalability</span><span class="vocab-ja">拡張性</span></div>
+          <div class="vocab-item"><span class="vocab-en">Ramp Up / Ramp Down</span><span class="vocab-ja">増員 / 縮小</span></div>
+          <div class="vocab-item"><span class="vocab-en">Value Proposition</span><span class="vocab-ja">価値提案</span></div>
+          <div class="vocab-item"><span class="vocab-en">Compliance</span><span class="vocab-ja">法令遵守</span></div>
+        </div>
+      </div>
+
+      <!-- KPI & Metrics -->
+      <div class="vocab-card">
+        <div class="vocab-card-header" style="background:linear-gradient(135deg,#00b894,#55efc4);">
+          <span>&#x1F4C8;</span>
+          <h3>KPI & Metrics</h3>
+        </div>
+        <div class="vocab-list">
+          <div class="vocab-item"><span class="vocab-en">Time-to-Fill</span><span class="vocab-ja">充足日数</span></div>
+          <div class="vocab-item"><span class="vocab-en">Time-to-Hire</span><span class="vocab-ja">採用リードタイム</span></div>
+          <div class="vocab-item"><span class="vocab-en">Cost-per-Hire</span><span class="vocab-ja">一人当たり採用コスト</span></div>
+          <div class="vocab-item"><span class="vocab-en">Quality of Hire</span><span class="vocab-ja">採用品質</span></div>
+          <div class="vocab-item"><span class="vocab-en">Offer Acceptance Rate</span><span class="vocab-ja">内定承諾率</span></div>
+          <div class="vocab-item"><span class="vocab-en">Attrition Rate</span><span class="vocab-ja">離職率</span></div>
+          <div class="vocab-item"><span class="vocab-en">Fill Rate</span><span class="vocab-ja">充足率</span></div>
+          <div class="vocab-item"><span class="vocab-en">Conversion Rate</span><span class="vocab-ja">選考通過率</span></div>
+          <div class="vocab-item"><span class="vocab-en">Pipeline Velocity</span><span class="vocab-ja">パイプライン速度</span></div>
+          <div class="vocab-item"><span class="vocab-en">Requisition Aging</span><span class="vocab-ja">求人経過日数</span></div>
+        </div>
+      </div>
+
+      <!-- Technology & AI -->
+      <div class="vocab-card">
+        <div class="vocab-card-header" style="background:linear-gradient(135deg,#fdcb6e,#e17055);">
+          <span>&#x1F916;</span>
+          <h3>Technology & AI</h3>
+        </div>
+        <div class="vocab-list">
+          <div class="vocab-item"><span class="vocab-en">ATS (Applicant Tracking System)</span><span class="vocab-ja">応募者管理システム</span></div>
+          <div class="vocab-item"><span class="vocab-en">CRM (Candidate Relationship)</span><span class="vocab-ja">候補者関係管理</span></div>
+          <div class="vocab-item"><span class="vocab-en">AI-Powered Screening</span><span class="vocab-ja">AI選考</span></div>
+          <div class="vocab-item"><span class="vocab-en">Resume Parsing</span><span class="vocab-ja">履歴書自動解析</span></div>
+          <div class="vocab-item"><span class="vocab-en">Programmatic Job Advertising</span><span class="vocab-ja">プログラマティック求人広告</span></div>
+          <div class="vocab-item"><span class="vocab-en">Talent Intelligence</span><span class="vocab-ja">タレントインテリジェンス</span></div>
+          <div class="vocab-item"><span class="vocab-en">Skills-Based Hiring</span><span class="vocab-ja">スキルベース採用</span></div>
+          <div class="vocab-item"><span class="vocab-en">Agentic AI</span><span class="vocab-ja">エージェンティックAI</span></div>
+          <div class="vocab-item"><span class="vocab-en">Predictive Analytics</span><span class="vocab-ja">予測分析</span></div>
+          <div class="vocab-item"><span class="vocab-en">Chatbot Engagement</span><span class="vocab-ja">チャットボット対応</span></div>
+        </div>
+      </div>
+
+      <!-- DEI & Strategy -->
+      <div class="vocab-card">
+        <div class="vocab-card-header" style="background:linear-gradient(135deg,#fd79a8,#e84393);">
+          <span>&#x1F30D;</span>
+          <h3>DEI & Strategy</h3>
+        </div>
+        <div class="vocab-list">
+          <div class="vocab-item"><span class="vocab-en">DEI (Diversity, Equity, Inclusion)</span><span class="vocab-ja">多様性・公平性・包摂性</span></div>
+          <div class="vocab-item"><span class="vocab-en">Inclusive Hiring</span><span class="vocab-ja">インクルーシブ採用</span></div>
+          <div class="vocab-item"><span class="vocab-en">Unconscious Bias</span><span class="vocab-ja">無意識バイアス</span></div>
+          <div class="vocab-item"><span class="vocab-en">Workforce Planning</span><span class="vocab-ja">要員計画</span></div>
+          <div class="vocab-item"><span class="vocab-en">Talent Pipelining</span><span class="vocab-ja">タレントパイプライニング</span></div>
+          <div class="vocab-item"><span class="vocab-en">Total Talent Management</span><span class="vocab-ja">全体的人材管理</span></div>
+          <div class="vocab-item"><span class="vocab-en">Contingent Workforce</span><span class="vocab-ja">業務委託・派遣人材</span></div>
+          <div class="vocab-item"><span class="vocab-en">Succession Planning</span><span class="vocab-ja">後継者育成計画</span></div>
+          <div class="vocab-item"><span class="vocab-en">Employer Brand Audit</span><span class="vocab-ja">採用ブランド評価</span></div>
+          <div class="vocab-item"><span class="vocab-en">Talent Marketing</span><span class="vocab-ja">タレントマーケティング</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Practical Phrases -->
+<section id="phrases" class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Phrases</div>
+      <h2 class="section-title">業務シーン別フレーズ集</h2>
+      <p class="section-desc">RPOの日常業務で即座に使える実践的な英語表現</p>
+    </div>
+    <div class="phrase-scenarios">
+
+      <!-- Candidate Communication -->
+      <div class="scenario">
+        <div class="scenario-header" onclick="toggleScenario(this)">
+          <span style="font-size:1.4rem;">&#x1F4DE;</span>
+          <h3>候補者とのコミュニケーション</h3>
+          <span class="toggle">&#x25BC;</span>
+        </div>
+        <div class="scenario-body">
+          <div class="phrase-pair">
+            <div class="phrase-context">初回スクリーニング</div>
+            <div class="phrase-en">"Can you walk me through your work experience, particularly your most recent role?"</div>
+            <div class="phrase-ja">直近のご経験を中心に、職務経歴を教えていただけますか？</div>
+          </div>
+          <div class="phrase-pair">
+            <div class="phrase-context">動機確認</div>
+            <div class="phrase-en">"What motivates you to explore new opportunities at this point in your career?"</div>
+            <div class="phrase-ja">今のキャリアのタイミングで新しい機会を検討されている理由は？</div>
+          </div>
+          <div class="phrase-pair">
+            <div class="phrase-context">面接調整</div>
+            <div class="phrase-en">"I'd like to schedule an interview with the hiring manager. Would Tuesday at 2 PM work for you?"</div>
+            <div class="phrase-ja">採用責任者との面接を設定したいのですが、火曜の14時はいかがですか？</div>
+          </div>
+          <div class="phrase-pair">
+            <div class="phrase-context">ステータス更新</div>
+            <div class="phrase-en">"I wanted to give you a quick update — your application is currently under review by the hiring team."</div>
+            <div class="phrase-ja">簡単にご報告です。現在、採用チームにて選考中です。</div>
+          </div>
+          <div class="phrase-pair">
+            <div class="phrase-context">内定通知</div>
+            <div class="phrase-en">"I'm pleased to inform you that we'd like to extend an offer for the position."</div>
+            <div class="phrase-ja">内定のご連絡です。ポジションへのオファーをお出しいたします。</div>
+          </div>
+          <div class="phrase-pair">
+            <div class="phrase-context">不採用通知</div>
+            <div class="phrase-en">"After careful consideration, we've decided to move forward with another candidate. We truly appreciate your time and interest."</div>
+            <div class="phrase-ja">慎重に検討した結果、今回は他の候補者を進めることになりました。お時間とご関心に感謝いたします。</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Client Communication -->
+      <div class="scenario">
+        <div class="scenario-header" onclick="toggleScenario(this)">
+          <span style="font-size:1.4rem;">&#x1F4BC;</span>
+          <h3>クライアント対応</h3>
+          <span class="toggle">&#x25BC;</span>
+        </div>
+        <div class="scenario-body">
+          <div class="phrase-pair">
+            <div class="phrase-context">パイプライン報告</div>
+            <div class="phrase-en">"Here's our weekly pipeline update — we currently have 12 candidates in the screening stage and 5 moving to final interviews."</div>
+            <div class="phrase-ja">週次パイプライン報告です。現在スクリーニング段階に12名、最終面接に進む方が5名います。</div>
+          </div>
+          <div class="phrase-pair">
+            <div class="phrase-context">要件確認</div>
+            <div class="phrase-en">"Could we align on the must-have versus nice-to-have qualifications for this role?"</div>
+            <div class="phrase-ja">このポジションの必須要件と歓迎要件の認識を合わせさせてください。</div>
+          </div>
+          <div class="phrase-pair">
+            <div class="phrase-context">課題提起</div>
+            <div class="phrase-en">"We're seeing a longer time-to-fill than expected. I'd recommend expanding our sourcing channels to include..."</div>
+            <div class="phrase-ja">充足日数が想定より長くなっています。ソーシングチャネルの拡大をお勧めします。</div>
+          </div>
+          <div class="phrase-pair">
+            <div class="phrase-context">KPI報告</div>
+            <div class="phrase-en">"Our offer acceptance rate this quarter stands at 85%, which is above the industry benchmark of 80%."</div>
+            <div class="phrase-ja">今四半期の内定承諾率は85%で、業界基準の80%を上回っています。</div>
+          </div>
+          <div class="phrase-pair">
+            <div class="phrase-context">改善提案</div>
+            <div class="phrase-en">"Based on our data analysis, I'd like to propose a shift to skills-based assessments to improve quality of hire."</div>
+            <div class="phrase-ja">データ分析に基づき、採用品質向上のためスキルベース評価への移行を提案します。</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Meeting & Presentation -->
+      <div class="scenario">
+        <div class="scenario-header" onclick="toggleScenario(this)">
+          <span style="font-size:1.4rem;">&#x1F3A4;</span>
+          <h3>MTG・プレゼンテーション</h3>
+          <span class="toggle">&#x25BC;</span>
+        </div>
+        <div class="scenario-body">
+          <div class="phrase-pair">
+            <div class="phrase-context">MTG開始</div>
+            <div class="phrase-en">"Let's kick off with a quick recap of where we stand on current requisitions."</div>
+            <div class="phrase-ja">まず現在の求人状況の簡単な振り返りから始めましょう。</div>
+          </div>
+          <div class="phrase-pair">
+            <div class="phrase-context">要約</div>
+            <div class="phrase-en">"To summarize the key takeaways — we agreed to prioritize the senior engineer role and revisit the JD by Friday."</div>
+            <div class="phrase-ja">要点をまとめると、シニアエンジニア職を優先し、金曜までにJDを見直すことで合意しました。</div>
+          </div>
+          <div class="phrase-pair">
+            <div class="phrase-context">意見表明</div>
+            <div class="phrase-en">"From our perspective, the current compensation package may not be competitive enough to attract top-tier talent."</div>
+            <div class="phrase-ja">当社の見解では、現在の報酬パッケージはトップ人材を引きつけるには十分でない可能性があります。</div>
+          </div>
+          <div class="phrase-pair">
+            <div class="phrase-context">アクションアイテム</div>
+            <div class="phrase-en">"Let me outline the action items: I'll send the updated candidate slate by EOD, and we'll reconvene Thursday."</div>
+            <div class="phrase-ja">アクションアイテムを確認します。本日中に更新候補者リストを送付し、木曜に再度MTGを行います。</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Email Templates -->
+      <div class="scenario">
+        <div class="scenario-header" onclick="toggleScenario(this)">
+          <span style="font-size:1.4rem;">&#x2709;&#xFE0F;</span>
+          <h3>メールテンプレート</h3>
+          <span class="toggle">&#x25BC;</span>
+        </div>
+        <div class="scenario-body">
+          <div class="phrase-pair">
+            <div class="phrase-context">フォローアップ</div>
+            <div class="phrase-en">"Following up on our conversation earlier — please find attached the candidate profiles we discussed."</div>
+            <div class="phrase-ja">先ほどの会話のフォローアップです。お話しした候補者プロフィールを添付いたします。</div>
+          </div>
+          <div class="phrase-pair">
+            <div class="phrase-context">リマインダー</div>
+            <div class="phrase-en">"Just a gentle reminder that we're awaiting feedback on the three candidates interviewed last week."</div>
+            <div class="phrase-ja">先週面接された3名のフィードバックをお待ちしておりますので、リマインドさせていただきます。</div>
+          </div>
+          <div class="phrase-pair">
+            <div class="phrase-context">確認依頼</div>
+            <div class="phrase-en">"Could you please confirm the interview panel and time slots at your earliest convenience?"</div>
+            <div class="phrase-ja">面接パネルと時間帯をお手すきの際にご確認いただけますでしょうか？</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Negotiation -->
+      <div class="scenario">
+        <div class="scenario-header" onclick="toggleScenario(this)">
+          <span style="font-size:1.4rem;">&#x1F4B0;</span>
+          <h3>交渉・条件調整</h3>
+          <span class="toggle">&#x25BC;</span>
+        </div>
+        <div class="scenario-body">
+          <div class="phrase-pair">
+            <div class="phrase-context">オファー条件</div>
+            <div class="phrase-en">"The offer includes a base salary of $120K, a 15% performance bonus, and comprehensive benefits."</div>
+            <div class="phrase-ja">オファー内容は基本給$120K、業績ボーナス15%、包括的な福利厚生です。</div>
+          </div>
+          <div class="phrase-pair">
+            <div class="phrase-context">カウンター対応</div>
+            <div class="phrase-en">"I understand your expectation. Let me discuss this with the hiring manager and get back to you within 24 hours."</div>
+            <div class="phrase-ja">ご希望は承知しました。採用責任者と協議の上、24時間以内にご連絡いたします。</div>
+          </div>
+          <div class="phrase-pair">
+            <div class="phrase-context">条件すり合わせ</div>
+            <div class="phrase-en">"Would you be open to a slightly lower base with a higher variable component, given the growth potential?"</div>
+            <div class="phrase-ja">成長ポテンシャルを考慮して、基本給をやや抑えて変動報酬を高くする形はいかがですか？</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Weekly Routine -->
+<section class="section" style="background:var(--light);">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Routine</div>
+      <h2 class="section-title">週間学習スケジュール</h2>
+      <p class="section-desc">毎週固定のルーティンで学習を習慣化する</p>
+    </div>
+    <table class="routine-table">
+      <thead>
+        <tr>
+          <th>曜日</th>
+          <th>時間</th>
+          <th>アクティビティ</th>
+          <th>成果物</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="routine-day">月曜</td>
+          <td class="routine-time">朝15分</td>
+          <td>RPO語彙フラッシュカード復習（10語）</td>
+          <td>語彙帳に新規5語追加</td>
+        </tr>
+        <tr>
+          <td class="routine-day">火曜</td>
+          <td class="routine-time">昼15分</td>
+          <td>英語メール1通作成（業務テーマ）</td>
+          <td>メールテンプレート蓄積</td>
+        </tr>
+        <tr>
+          <td class="routine-day">水曜</td>
+          <td class="routine-time">朝20分</td>
+          <td>RPO業界記事リーディング＋100語要約</td>
+          <td>英文サマリー提出</td>
+        </tr>
+        <tr>
+          <td class="routine-day">木曜</td>
+          <td class="routine-time">夕20分</td>
+          <td>ロールプレイ練習（録音）</td>
+          <td>録音ファイル保存・自己評価</td>
+        </tr>
+        <tr>
+          <td class="routine-day">金曜</td>
+          <td class="routine-time">終業前30分</td>
+          <td>週次RPO英語アウトプットまとめ</td>
+          <td>週間レポート（英語）</td>
+        </tr>
+        <tr>
+          <td class="routine-day">週末</td>
+          <td class="routine-time">30分</td>
+          <td>Podcast / YouTube（HR・Recruitment系）</td>
+          <td>聞き取りメモ</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- KPI -->
+<section id="kpi" class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">KPI</div>
+      <h2 class="section-title">学習成果の測定指標</h2>
+      <p class="section-desc">量より「業務時間の圧縮」に寄せたKPIで、実務への効果を可視化する</p>
+    </div>
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <h3>&#x23F1;&#xFE0F; 効率性（定量KPI）</h3>
+        <div class="kpi-row">
+          <span class="kpi-label">英語メール作成時間</span>
+          <div class="kpi-values">
+            <span class="kpi-before">15分</span>
+            <span class="kpi-arrow">&#x2192;</span>
+            <span class="kpi-after">5分</span>
+          </div>
+        </div>
+        <div class="kpi-row">
+          <span class="kpi-label">MTG要約作成時間</span>
+          <div class="kpi-values">
+            <span class="kpi-before">20分</span>
+            <span class="kpi-arrow">&#x2192;</span>
+            <span class="kpi-after">8分</span>
+          </div>
+        </div>
+        <div class="kpi-row">
+          <span class="kpi-label">送信前チェック回数</span>
+          <div class="kpi-values">
+            <span class="kpi-before">5回</span>
+            <span class="kpi-arrow">&#x2192;</span>
+            <span class="kpi-after">1-2回</span>
+          </div>
+        </div>
+        <div class="kpi-row">
+          <span class="kpi-label">質問への即答率</span>
+          <div class="kpi-values">
+            <span class="kpi-before">20%</span>
+            <span class="kpi-arrow">&#x2192;</span>
+            <span class="kpi-after">70%+</span>
+          </div>
+        </div>
+      </div>
+      <div class="kpi-card">
+        <h3>&#x1F4C8; 積極性（定量KPI）</h3>
+        <div class="kpi-row">
+          <span class="kpi-label">英語MTG自発発言</span>
+          <div class="kpi-values">
+            <span class="kpi-before">週1回</span>
+            <span class="kpi-arrow">&#x2192;</span>
+            <span class="kpi-after">週5回+</span>
+          </div>
+        </div>
+        <div class="kpi-row">
+          <span class="kpi-label">英語案件への関与</span>
+          <div class="kpi-values">
+            <span class="kpi-before">回避</span>
+            <span class="kpi-arrow">&#x2192;</span>
+            <span class="kpi-after">積極参加</span>
+          </div>
+        </div>
+        <div class="kpi-row">
+          <span class="kpi-label">RPO語彙習得数</span>
+          <div class="kpi-values">
+            <span class="kpi-before">0</span>
+            <span class="kpi-arrow">&#x2192;</span>
+            <span class="kpi-after">200+</span>
+          </div>
+        </div>
+        <div class="kpi-row">
+          <span class="kpi-label">週次アウトプット提出</span>
+          <div class="kpi-values">
+            <span class="kpi-before">0%</span>
+            <span class="kpi-arrow">&#x2192;</span>
+            <span class="kpi-after">90%+</span>
+          </div>
+        </div>
+      </div>
+      <div class="kpi-card">
+        <h3>&#x2B50; 定性KPI</h3>
+        <div class="kpi-row">
+          <span class="kpi-label">コミュニケーション不安度</span>
+          <div class="kpi-values">
+            <span class="kpi-before">高い</span>
+            <span class="kpi-arrow">&#x2192;</span>
+            <span class="kpi-after">低い</span>
+          </div>
+        </div>
+        <div class="kpi-row">
+          <span class="kpi-label">クライアント評価</span>
+          <div class="kpi-values">
+            <span class="kpi-before">-</span>
+            <span class="kpi-arrow">&#x2192;</span>
+            <span class="kpi-after">好評</span>
+          </div>
+        </div>
+        <div class="kpi-row">
+          <span class="kpi-label">再確認の頻度</span>
+          <div class="kpi-values">
+            <span class="kpi-before">頻繁</span>
+            <span class="kpi-arrow">&#x2192;</span>
+            <span class="kpi-after">稀</span>
+          </div>
+        </div>
+        <div class="kpi-row">
+          <span class="kpi-label">英語業務への自信</span>
+          <div class="kpi-values">
+            <span class="kpi-before">低い</span>
+            <span class="kpi-arrow">&#x2192;</span>
+            <span class="kpi-after">高い</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trends -->
+<section id="trends" class="section trends-bg">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag" style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.2);">Trends 2025-2026</div>
+      <h2 class="section-title">RPO業界グローバルトレンド</h2>
+      <p class="section-desc">英語学習と合わせて押さえるべき業界の最新動向</p>
+    </div>
+    <div class="trends-grid">
+      <div class="trend-card">
+        <div class="trend-icon">&#x1F916;</div>
+        <h3>AI-Powered Recruitment</h3>
+        <p>生成AIがJD作成・レジュメ解析・候補者エンゲージメントの基盤に。エージェンティックAIが面接スケジューリングやスクリーニングを自律実行。AI対応RPOを選ぶ企業が3.5倍に。</p>
+        <span class="trend-keyword">Generative AI</span>
+        <span class="trend-keyword">Agentic AI</span>
+        <span class="trend-keyword">Resume Parsing</span>
+      </div>
+      <div class="trend-card">
+        <div class="trend-icon">&#x1F30D;</div>
+        <h3>DEI & Inclusive Hiring</h3>
+        <p>多様性・公平性・包摂性（DEI）が採用戦略の中核に。AIがバイアスを除去し、スキルと経験のみに焦点。アンダーレプリゼンテッドグループからのソーシングを強化。</p>
+        <span class="trend-keyword">Unconscious Bias</span>
+        <span class="trend-keyword">Diversity Metrics</span>
+      </div>
+      <div class="trend-card">
+        <div class="trend-icon">&#x1F3AF;</div>
+        <h3>Skills-Based Hiring</h3>
+        <p>学歴・職歴から「実際のスキル」へ評価基準がシフト。実践的スキルアセスメントで候補者の即戦力度を評価。ポテンシャル採用との融合も進行。</p>
+        <span class="trend-keyword">Skills Assessment</span>
+        <span class="trend-keyword">Competency Framework</span>
+      </div>
+      <div class="trend-card">
+        <div class="trend-icon">&#x1F4C8;</div>
+        <h3>Strategic Talent Consulting</h3>
+        <p>RPOがトランザクショナルな採用代行から戦略的タレントコンサルティングへ進化。ブランディング・パイプライニング・DEIコンサルを包括。2025年は74%がオンゴイングRPO契約。</p>
+        <span class="trend-keyword">Employer Branding</span>
+        <span class="trend-keyword">Talent Pipelining</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Resources -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Resources</div>
+      <h2 class="section-title">推奨学習リソース</h2>
+      <p class="section-desc">RPO英語力強化に役立つリソース一覧</p>
+    </div>
+    <div class="resources-grid">
+      <div class="resource-card">
+        <h3>&#x1F3A7; Podcast / Audio</h3>
+        <div class="resource-item">
+          <div class="resource-name">The Recruiting Future Podcast</div>
+          <div class="resource-desc">Matt Alder氏によるHR/リクルーティング業界の最新トレンド</div>
+        </div>
+        <div class="resource-item">
+          <div class="resource-name">SHRM All Things Work</div>
+          <div class="resource-desc">米国人事管理協会の公式ポッドキャスト</div>
+        </div>
+        <div class="resource-item">
+          <div class="resource-name">Talent Cast</div>
+          <div class="resource-desc">エンプロイヤーブランディング専門のポッドキャスト</div>
+        </div>
+        <div class="resource-item">
+          <div class="resource-name">HR Happy Hour</div>
+          <div class="resource-desc">HR/テクノロジートレンドをカバーする老舗ポッドキャスト</div>
+        </div>
+      </div>
+      <div class="resource-card">
+        <h3>&#x1F4F0; メディア / ニュース</h3>
+        <div class="resource-item">
+          <div class="resource-name">ERE.net</div>
+          <div class="resource-desc">採用・リクルーティング業界のニュース・分析サイト</div>
+        </div>
+        <div class="resource-item">
+          <div class="resource-name">SHRM.org</div>
+          <div class="resource-desc">米国人事管理協会の公式メディア</div>
+        </div>
+        <div class="resource-item">
+          <div class="resource-name">LinkedIn Talent Blog</div>
+          <div class="resource-desc">LinkedIn公式の採用・人材に関するブログ</div>
+        </div>
+        <div class="resource-item">
+          <div class="resource-name">RPOA (RPO Association)</div>
+          <div class="resource-desc">RPO業界団体のリソース・レポート</div>
+        </div>
+      </div>
+      <div class="resource-card">
+        <h3>&#x1F4DA; 書籍 / コース</h3>
+        <div class="resource-item">
+          <div class="resource-name">Talent Acquisition Excellence (SHRM)</div>
+          <div class="resource-desc">SHRM認定の採用プロフェッショナル向けコース</div>
+        </div>
+        <div class="resource-item">
+          <div class="resource-name">AIHR - Talent Acquisition Certificate</div>
+          <div class="resource-desc">オンラインで取得できるTA認定プログラム</div>
+        </div>
+        <div class="resource-item">
+          <div class="resource-name">Business English for HR (Coursera)</div>
+          <div class="resource-desc">HR業務特化のビジネス英語コース</div>
+        </div>
+        <div class="resource-item">
+          <div class="resource-name">Who: The A Method for Hiring</div>
+          <div class="resource-desc">採用面接メソッドの定番書（Geoff Smart著）</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AI Discussion Summary -->
+<section class="section discussion-bg">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">AI Discussion</div>
+      <h2 class="section-title">3者協議サマリー</h2>
+      <p class="section-desc">Claude, GPT-5, Geminiの3つのAIによる議論から導出されたロードマップ</p>
+    </div>
+    <div class="ai-opinions">
+      <div class="ai-card" style="border-color:var(--highlight);">
+        <h3><span style="font-size:1.2rem;">&#x1F7E0;</span> Claude（Anthropic）</h3>
+        <p>ライティング先行でRPO固有の語彙・フレーズから入り、実際の業務シナリオをベースにしたロールプレイを中心に据える4フェーズ設計を提案。</p>
+        <div class="key-point" style="border-color:var(--highlight);">
+          <strong>Key:</strong> RPO固有の語彙から入り、汎用ビジネス英語ではなく業務直結型で学習を開始する
+        </div>
+      </div>
+      <div class="ai-card" style="border-color:var(--blue);">
+        <h3><span style="font-size:1.2rem;">&#x1F535;</span> GPT-5（OpenAI）</h3>
+        <p>「タスク×相手×成果物」で学習を設計し、毎週必ず実務アウトプットを出す仕組みを最重視。書く/話すの並行学習で実運用への接続を加速。</p>
+        <div class="key-point" style="border-color:var(--blue);">
+          <strong>Key:</strong> KPIは量より「業務時間の圧縮」に寄せ、成果物の提出を先に固定することで継続を担保
+        </div>
+      </div>
+      <div class="ai-card" style="border-color:var(--green);">
+        <h3><span style="font-size:1.2rem;">&#x1F7E2;</span> Gemini（Google）</h3>
+        <p>「実践への早期投入と成果測定の仕組み化」を軸に、業務シーン別の優先順位付けと週次固定アウトプットの組み合わせを提案。</p>
+        <div class="key-point" style="border-color:var(--green);">
+          <strong>Key:</strong> 定量KPI（効率性）と定性KPI（自信・影響力）の両面から測定し、成長を可視化する
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Quick Start Checklist -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Quick Start</div>
+      <h2 class="section-title">今日から始めるチェックリスト</h2>
+      <p class="section-desc">最初の1週間で取り組むべきアクション</p>
+    </div>
+    <div class="checklist">
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"></div>
+        <div class="checklist-text">RPO専門用語リストをプリントアウト / ブックマークする</div>
+      </div>
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"></div>
+        <div class="checklist-text">「文脈タグ付き語彙帳」のテンプレートを作成する（Notion / スプレッドシート）</div>
+      </div>
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"></div>
+        <div class="checklist-text">過去の業務メール3通を英訳してテンプレート化する</div>
+      </div>
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"></div>
+        <div class="checklist-text">週間学習スケジュールをカレンダーに登録する</div>
+      </div>
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"></div>
+        <div class="checklist-text">HR系Podcastを1つ登録して通勤中に聞き始める</div>
+      </div>
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"></div>
+        <div class="checklist-text">KPI測定の基準値を記録する（現在のメール作成時間等）</div>
+      </div>
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"></div>
+        <div class="checklist-text">ERE.net / SHRM.org のニュースレターに登録する</div>
+      </div>
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"></div>
+        <div class="checklist-text">LinkedIn言語設定を英語に切り替える</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>RPO English Mastery Roadmap</p>
+    <p style="margin-top:8px;">Built with insights from <strong style="color:#ff6b81;">Claude</strong>, <strong style="color:#74b9ff;">GPT-5</strong>, and <strong style="color:#55efc4;">Gemini</strong></p>
+    <p class="footer-note">Created: February 2026 | 3-AI Consensus-Based Learning Design</p>
+  </div>
+</footer>
+
+<script>
+function toggleScenario(header) {
+  const body = header.nextElementSibling;
+  const toggle = header.querySelector('.toggle');
+  if (body.style.display === 'none') {
+    body.style.display = 'block';
+    toggle.style.transform = 'rotate(0deg)';
+  } else {
+    body.style.display = 'none';
+    toggle.style.transform = 'rotate(-90deg)';
+  }
+}
+
+function toggleCheck(item) {
+  const box = item.querySelector('.check-box');
+  const text = item.querySelector('.checklist-text');
+  box.classList.toggle('checked');
+  text.classList.toggle('done');
+  if (box.classList.contains('checked')) {
+    box.innerHTML = '&#x2713;';
+  } else {
+    box.innerHTML = '';
+  }
+}
+</script>
+
+</body>
+</html>
